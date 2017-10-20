@@ -102,4 +102,12 @@ public class TicketMachine
     {
         return total;
     }
+    
+    /**
+     *Extrae todo el dinero acumulado en la maquina
+     */
+    public void vaciar()
+    {
+        total = 0;
+    }
 }
