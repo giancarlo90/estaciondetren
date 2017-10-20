@@ -84,4 +84,12 @@ public class TicketMachine
     {
         System.out.println("The price of a Ticket is " + price + " cents");
     }
+    
+    /**
+     * Return the total
+     */
+    public int getTotal()
+    {
+        return total;
+    }
 }
