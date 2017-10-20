@@ -33,6 +33,48 @@ public class TrainStation
     }
     
     /**
-     * Devuelve el total de dinero recaudado
+     * Devuelve el total de dinero recaudado por las maquinas de la estacion hasta el momento
      */
+    public int devolucion()
+    {
+        return machine1.getTotal() + machine2.getTotal();
+        
+    }
+    
+    
+    
+    /**
+     * Devuelve el total de dinero recaudado por la maquina 1 hasta el momento
+     */
+    public int devolucionMaquina1()
+    {
+    return machine1.getTotal();
+    }
+    
+       
+    /**
+     * Devuelve el total de dinero recaudado por la maquina 1 hasta el momento
+     */
+    public int devolucionMaquina2()
+    {
+    return machine2.getTotal();
+    }
+    
+    /** 
+     * Imprime por pantalla la cantidad recaudada por la maquina 1 y 2 y el total de ambas
+     */
+    public void maquina1()
+    {
+        System.out.println ("La cantidad de la maquina 1 es " + machine1.getTotal());
+    }
+    
+        public void maquina2()
+    {
+        System.out.println ("La cantidad de la maquina 2 es " + machine2.getTotal());
+    }
+    
+    public void totales()
+     {
+        System.out.println ("La recaudacion total es " + (machine1.getTotal() + machine2.getTotal()));
+     }
 }
